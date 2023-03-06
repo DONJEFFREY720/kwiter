@@ -1,17 +1,17 @@
 
 //ADD YOUR FIREBASE LINKS HERE
 var firebaseConfig = {
-  apiKey: "AIzaSyAZcb3Fjrsh0ybOOXC6ZkNBRFucbZBepSU",
-  authDomain: "twitter2-d4b6d.firebaseapp.com",
-  databaseURL: "https://twitter2-d4b6d-default-rtdb.firebaseio.com",
-  projectId: "twitter2-d4b6d",
-  storageBucket: "twitter2-d4b6d.appspot.com",
-  messagingSenderId: "290799928667",
-  appId: "1:290799928667:web:8959d0c02c19d59ccc867e"
+  apiKey: "AIzaSyDMoGObDZ5pzkJ8kpUzhw0ZSYaCji1T4Eg",
+  authDomain: "school-chat-4e8af.firebaseapp.com",
+  databaseURL: "https://school-chat-4e8af-default-rtdb.firebaseio.com",
+  projectId: "school-chat-4e8af",
+  storageBucket: "school-chat-4e8af.appspot.com",
+  messagingSenderId: "997603978614",
+  appId: "1:997603978614:web:3103c665d1f07a34219e57"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(firebaseConfig);
 
     function userNamez() {
       var user_Name =  localStorage.getItem("user")
