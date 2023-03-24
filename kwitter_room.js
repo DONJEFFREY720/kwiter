@@ -13,8 +13,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
-Room_names = childKey;
 
     function userNamez() {
       var user_Name =  localStorage.getItem("user")
@@ -43,7 +41,7 @@ function adddRoom() {
      localStorage.setItem("room_name",new_room)
      firebase.database().ref("/").child(new_room).update({
             purpose:"adding room name"
-     })
+     });
      window.location="kwitter_page.html"
 
 }
@@ -55,4 +53,4 @@ function redirrect_to_room_name(name){
 }
 
  
-      
+ 
