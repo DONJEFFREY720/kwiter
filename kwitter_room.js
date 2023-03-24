@@ -38,7 +38,7 @@ getData();
 user1=localStorage.getItem("user")
 document.getElementById("username").innerHTML= "WELCOME"+"  "+user1+"!!"
 
-function addRoom() {
+function adddRoom() {
      new_room=document.getElementById("RoomName").value
      localStorage.setItem("room_name",new_room)
      firebase.database().ref("/").child(new_room).update({
